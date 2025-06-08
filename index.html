@@ -295,28 +295,18 @@
       <div class="w-full lg:w-1/2 lg:h-[600px]">  <!-- Added matching height -->
         <div class="relative h-full rounded-xl overflow-hidden shadow-xl">  <!-- Removed aspect ratio, using full height -->
           <!-- Auto-playing looped video -->
-          <video 
-            class="w-full h-full object-cover rounded-xl"  <!-- Added object-cover and h-full -->
-            autoplay 
-            loop 
-            muted
-            playsinline
-            poster="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-          >
-            <source src="VIDEO - Trim.mp4" type="video/mp4">
-            <source src="IMAGES/about.jpg" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-          
-          <!-- Play button overlay -->
-          <div id="videoOverlay" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 transition-opacity cursor-pointer">
-            <button class="bg-white bg-opacity-80 rounded-full p-3 hover:bg-opacity-100 transition-all">  <!-- Reduced p-4 to p-3 -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">  <!-- Reduced h-12 to h-10 -->
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </button>
-          </div>
+       <video 
+  class="w-full h-full object-cover rounded-xl"
+  autoplay 
+  loop 
+  muted
+  playsinline
+  poster="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+>
+  <source src="VIDEO - Trim.mp4" type="video/mp4">
+  <source src="IMAGES/about.jpg" type="video/webm">
+  Your browser does not support the video tag.
+</video>
         </div>
       </div>
     </div>
@@ -410,7 +400,7 @@
              class="w-full rounded-lg shadow-md transform transition duration-500 hover:scale-125 hover:-rotate-3 animate-zoom-in delay-400" />
 
         <!-- Image 5 -->
-        <img src="IMAGES/clean10.jpg" alt="Clean carpet"
+        <img src="IMAGES/clean 5.jpg" alt="Clean carpet"
              class="w-full rounded-lg shadow-md transform transition duration-500 hover:scale-125 hover:rotate-1 animate-zoom-in delay-500" />
 
         <!-- Image 6 -->
@@ -642,7 +632,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">"SparkleClean transformed my home after we moved in. The team was professional, thorough, and left every surface sparkling!"</p>
+                            <p class="text-gray-700 italic">"RK Deep Clean transformed my home after we moved in. The team was professional, thorough, and left every surface sparkling!"</p>
                         </div>
                     </div>
 
@@ -891,18 +881,16 @@
 <footer class="bg-white text-blue-800 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Company Info with Logo -->
-            <div>
-                <div class="flex items-center mb-4">
-                  
-                    <img src="/IMAGES/deep.jpg" alt="RK Deep Clean Logo" class="h-44  mb-45">
-                
+            <!-- Company Info with Logo - Centered on small, left on md+ -->
+            <div class="text-center md:text-left">
+                <div class="flex md:items-center justify-center md:justify-start mb-4">
+                    <img src="/IMAGES/deep.jpg" alt="RK Deep Clean Logo" class="h-44">
                 </div>
             </div>
 
-            <!-- Quick Links -->
-            <div>
-                <h3 class="text-xl font-bold mb-4 text-black">Quick Links</h3> <!-- Changed to text-black -->
+            <!-- Quick Links - Hidden on small screens, shown on md and up -->
+            <div class="hidden md:block">
+                <h3 class="text-xl font-bold mb-4 text-black">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="#home" class="text-blue-600 hover:text-blue-800 transition duration-300">Home</a></li>
                     <li><a href="#about" class="text-blue-600 hover:text-blue-800 transition duration-300">About Us</a></li>
@@ -912,32 +900,31 @@
                 </ul>
             </div>
 
-            <!-- Services Section -->
-            <div>
-                <h3 class="text-xl font-bold mb-4 text-black">Our Services</h3> <!-- Changed to text-black -->
+            <!-- Services Section - Hidden on small screens, shown on md and up -->
+            <div class="hidden md:block">
+                <h3 class="text-xl font-bold mb-4 text-black">Our Services</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Residential Cleaning</a></li>
                     <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Commercial Cleaning</a></li>
-                    <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300"> Kitchen Cleaning</a></li>
+                    <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Kitchen Cleaning</a></li>
                     <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Post-Construction</a></li>
                     <li><a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Carpet Cleaning</a></li>
                 </ul>
             </div>
 
             <!-- Contact Info -->
-            <div>
-                <h3 class="text-xl font-bold mb-4 text-black">Contact Info</h3> <!-- Changed to text-black -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4 text-black">Contact Info</h3>
                 <ul class="space-y-2">
-                    <li class="flex items-center">
-                        <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
-                        <span class="text-blue-600">+91-8668632699</span>
+                    <li class="flex items-center justify-center md:justify-start">
+<i class="fa-solid fa-phone mr-2" style="color: #558dec;"></i>                        <span class="text-blue-600">+91-8668632699</span>
                     </li>
                     
-                    <li class="flex items-start">
-                        <i class="fas fa-map-marker-alt text-blue-600  mr-2 mt-1"></i>
+                    <li class="flex items-start justify-center md:justify-start">
+                        <i class="fas fa-map-marker-alt text-blue-600 mr-2 mt-1"></i>
                         <span class="text-blue-600">Plot No.5 Mohkund Saubhagya, Sector 28, Near Railway line, Ganga Nagar, Nigadi Pradhikaran</span>
                     </li>
-                    <div class="flex space-x-4 mt-4 mr-50 text-2xl">
+                    <div class="flex space-x-4 mt-4 justify-center md:justify-start text-2xl">
                         <a href="#" class="text-black hover:text-blue-800 transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -956,11 +943,10 @@
         </div>
 
         <div class="border-t border-blue-200 mt-1 pt-3 text-center">
-            <p class="text-black mt-1" >&copy; 2025 Kunash Media Solutions . All rights reserved.</p>
+            <p class="text-black mt-1">&copy; 2025 Kunash Media Solutions. All rights reserved.</p>
         </div>
     </div>
 </footer>
-
     <script>
         // Mobile menu toggle
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
